@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+.loader3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Đảm bảo căn giữa chiều cao */
+}
+
+.bars {
+  width: 6px;  /* Giảm xuống 6px cho gọn hơn */
+  height: 15px; /* Giảm chiều cao chút */
+  margin: 0 2px;
+  border-radius: 4px;
+  animation: loader3 3s ease-in-out infinite;
+  background-color: currentColor; /* Quan trọng: Ăn theo màu chữ */
+}
+
+/* Các thanh animation giữ nguyên delay */
+.bar1 { animation-delay: -0.8s; }
+.bar2 { animation-delay: -0.7s; }
+.bar3 { animation-delay: -0.6s; }
+.bar4 { animation-delay: -0.5s; }
+.bar5 { animation-delay: -0.4s; }
+.bar6 { animation-delay: -0.3s; }
+.bar7 { animation-delay: -0.2s; }
+.bar8 { animation-delay: -0.1s; }
+.bar9 { animation-delay: 0s; }
+.bar10 { animation-delay: 0.1s; }
+
+@keyframes loader3 {
+  0% { transform: scaleY(1); } /* Dùng scaleY mượt hơn */
+  20% { transform: scaleY(2); }
+  40% { transform: scaleY(1); }
+}
+
+/* Định nghĩa chuyển động trượt */
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Chỉ trượt 50% vì mình sẽ nhân đôi nội dung */
+}
+
+/* Class để áp dụng animation */
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content; /* Quan trọng: Để nội dung dàn ngang không bị xuống dòng */
+  animation: infinite-scroll 25s linear infinite; /* Chạy trong 25s, đều đặn, lặp mãi mãi */
+}
+
+/* (Tùy chọn) Khi di chuột vào thì dừng lại để xem cho rõ */
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+ /*( Trạng thái 404 ) */
+/* Animation chạy ngược chiều (Từ trái sang phải) */
+@keyframes infinite-scroll-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.animate-infinite-scroll-reverse {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll-reverse 25s linear infinite;
+}
+
+/* Hiệu ứng đốm sáng trôi dạt (Aurora Blob) Header giới thiệu */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Hiệu ứng phone rung (Phone Shake) */
+/* Định nghĩa animation lắc lư */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+/* Class để áp dụng animation */
+.animate-wiggle {
+  animation: wiggle 0.6s ease-in-out infinite; /* Lắc liên tục mỗi 0.6s */
+  transform-origin: center; /* Lắc quanh tâm icon */
+}
