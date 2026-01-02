@@ -23,9 +23,9 @@ export default function AboutMe() {
                             {/* Ảnh đại diện (Thay link ảnh của bạn vào đây) */}
                             <div className="aspect-square rounded-xl overflow-hidden bg-gray-200 mb-6 relative">
                                 <img
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    src="../storage/avata.jpg"
                                     alt="Profile"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                    className="w-full h-full object-contain group-hover:scale-105 transition duration-500"
                                 />
                                 {/* Badge kinh nghiệm (Optional) */}
                                 {/* <div className="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">

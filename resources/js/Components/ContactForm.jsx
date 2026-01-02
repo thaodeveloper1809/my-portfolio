@@ -81,9 +81,9 @@ export default function ContactForm() {
 
                         {/* Social Links ở dưới cùng */}
                         <div className="relative z-10 mt-12 flex justify-center gap-4">
-                            <SocialLink href="#" icon="facebook" />
-                            <SocialLink href="#" icon="github" />
-                            <SocialLink href="#" icon="linkedin" />
+                            <SocialLink href="https://www.facebook.com/sunboy189/" icon="facebook" />
+                            <SocialLink href="https://github.com/thaodeveloper1809" icon="github" />
+                            <SocialLink href="https://www.linkedin.com/in/thaonguyentang2k/" icon="linkedin" />
                         </div>
                     </div>
 

@@ -75,7 +75,7 @@ export default function Home({ skills, projects, name }) {
                                     <img
                                         src={`/storage/${skill.image}`}
                                         alt={skill.name}
-                                        className="h-14 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+                                        className="h-14 w-auto object-contain transition duration-300"
                                     />
                                 ) : (
                                     <span className="font-bold text-xl text-gray-400">{skill.name}</span>
@@ -90,7 +90,7 @@ export default function Home({ skills, projects, name }) {
                                     <img
                                         src={`/storage/${skill.image}`}
                                         alt={skill.name}
-                                        className="h-14 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+                                        className="h-14 w-auto object-contain transition duration-300"
                                     />
                                 ) : (
                                     <span className="font-bold text-xl text-gray-400">{skill.name}</span>

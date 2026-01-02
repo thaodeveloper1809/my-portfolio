@@ -33,7 +33,7 @@ export default function MainLayout({ children }) {
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
                         <img
-                            src="../storage/_Infinity_symbol_loops_made_of_fiber_optic_cables__glowing_blue__sleek_and_modern_tech_logo__black_background._-removebg-preview.png"
+                            src="/storage/_Infinity_symbol_loops_made_of_fiber_optic_cables__glowing_blue__sleek_and_modern_tech_logo__black_background._-removebg-preview.png"
                             alt="Logo"
                             className="h-10 w-auto object-contain hover:opacity-80 transition"
                         />
@@ -105,13 +105,6 @@ export default function MainLayout({ children }) {
                 <div className="container mx-auto px-6 text-center">
                     <h3 className="text-2xl font-bold mb-4">Let's work together!</h3>
                     <p className="text-gray-400 mb-6">Bạn có ý tưởng dự án? Hãy liên hệ để biến nó thành hiện thực.</p>
-
-                    <div className="flex justify-center space-x-6 mb-8">
-                        <a href="#" className="hover:text-blue-400 transition">GitHub</a>
-                        <a href="#" className="hover:text-blue-400 transition">LinkedIn</a>
-                        <a href="#" className="hover:text-blue-400 transition">Facebook</a>
-                    </div>
-
                     <p className="text-gray-600 text-sm">
                         © {new Date().getFullYear()} MyPortfolio. Built with Laravel 12 & React.
                     </p>
