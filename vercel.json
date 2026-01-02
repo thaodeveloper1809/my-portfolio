@@ -13,11 +13,5 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ],
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://YOUR_PROJECT_NAME.vercel.app",
-        "APP_KEY": "base64:..." 
-    }
+    ]
 }
